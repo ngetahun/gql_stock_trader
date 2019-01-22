@@ -7,5 +7,6 @@ module Types
         def ping
           'pong'
         end
+        field :ping, String, description: '', null: false 
     end
 end
