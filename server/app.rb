@@ -14,14 +14,14 @@ class GqlApp < Sinatra::Base
         json msg 
     end
 
-    use Rack::PostBodyContentTypeParser
-    post '/graphql' do
-        result = GqlAppSchema.execute(
-            params[:query],
-            variables: params[:variables],
-            context: { current_user: nil },
-        )
-        json result
-    end
+  use Rack::PostBodyContentTypeParser
+  post '/graphql' do
+      result = GqlAppSchema.execute(
+          params[:query],
+          variables: params[:variables],
+          context: { current_user: nil },
+      )
+      json result
+  end
 
 end
