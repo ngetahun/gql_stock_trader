@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ngetahun/gql_stock_trader) 
+
 # GraphQL subscription
 This repository is a sample application to show case graphql subscriptions in ruby. 
 
