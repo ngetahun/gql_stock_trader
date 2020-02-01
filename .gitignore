@@ -120,6 +120,9 @@ build-iPhoneSimulator/
 /doc/
 /rdoc/
 
+# Byebug history
+.byebug_history
+
 ## Environment normalization:
 /.bundle/
 /vendor/bundle
