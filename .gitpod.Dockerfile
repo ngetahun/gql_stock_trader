@@ -1,6 +1,4 @@
 FROM alpine
-                    
-USER gitpod
 
 # install ruby dependencies
 # nodejs
