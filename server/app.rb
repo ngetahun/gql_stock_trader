@@ -1,10 +1,11 @@
 require 'sinatra'
 require 'sinatra/json'
+require "sinatra/reloader" if development?
 require 'rack'
 require 'rack/contrib'
 require_relative 'gql/gql_app_schema'
 
-class GqlApp < Sinatra::Base
+class App < Sinatra::Base
    get '/' do
       'it works!'  
     end
