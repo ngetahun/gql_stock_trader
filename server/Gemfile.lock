@@ -1,9 +1,29 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (6.1.6.1)
+      activesupport (= 6.1.6.1)
+    activerecord (6.1.6.1)
+      activemodel (= 6.1.6.1)
+      activesupport (= 6.1.6.1)
+    activesupport (6.1.6.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     backports (3.15.0)
     byebug (11.1.1)
-    graphql (1.10.2)
+    concurrent-ruby (1.1.10)
+    dotenv (2.8.1)
+    ffi (1.15.5)
+    graphql (2.0.13)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    listen (3.7.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    minitest (5.15.0)
     multi_json (1.14.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -12,7 +32,12 @@ GEM
       rack (~> 2.0)
     rack-protection (2.0.8.1)
       rack
+    rb-fsevent (0.11.1)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
     ruby2_keywords (0.0.2)
+    shotgun (0.9.2)
+      rack (>= 1.0)
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -26,17 +51,25 @@ GEM
       sinatra (= 2.0.8.1)
       tilt (~> 2.0)
     tilt (2.0.10)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord (~> 6.1)
   byebug (~> 11.1)
-  graphql (~> 1.8)
+  dotenv (~> 2.8)
+  graphql (~> 2.0)
+  listen (~> 3.7)
   rack (~> 2.1)
   rack-contrib (~> 2.1)
+  shotgun (~> 0.9.2)
   sinatra (~> 2.0)
   sinatra-contrib (~> 2.0)
+  zeitwerk (~> 2.6)
 
 BUNDLED WITH
-   2.1.4
+   2.2.19

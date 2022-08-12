@@ -1,6 +1,7 @@
 require 'net/http'
 require 'uri'
 require 'json'
+require 'csv'
 
 module Lib
 	class FetchSymbol
@@ -9,7 +10,7 @@ module Lib
 
 		def self.symbols
 			response = []
-			reader = CSV.table("FSE_metadata.csv")
+			reader = ::CSV.table("FSE_metadata.csv")
 			reader.each do |row|
 				response << {
 					"code": row[0],

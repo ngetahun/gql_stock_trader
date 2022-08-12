@@ -1,4 +1,4 @@
-FROM ruby:2.5.0
+FROM ruby:2.7.6
 
 RUN bundle config --global frozen 1
 
@@ -12,4 +12,4 @@ EXPOSE 4000
 
 COPY . .
 
-CMD ["rackup", "-p 4000"]
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "4000"]

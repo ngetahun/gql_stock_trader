@@ -4,11 +4,11 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
 
+gem "dotenv", "~> 2.8"
 gem "sinatra", "~> 2.0"
 
-gem "graphql", "~> 1.8"
+gem "graphql", "~> 2.0"
 
 gem "rack", "~> 2.1"
 
@@ -17,3 +17,12 @@ gem "sinatra-contrib", "~> 2.0"
 gem "rack-contrib", "~> 2.1"
 
 gem "byebug", "~> 11.1"
+
+gem "activerecord", "~> 6.1"
+
+
+gem "zeitwerk", "~> 2.6"
+
+gem "listen", "~> 3.7"
+
+gem "shotgun", "~> 0.9.2"
