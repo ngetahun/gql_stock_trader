@@ -40,17 +40,18 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/apollo',
   ],
 
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        path: '/dashboard',
-        components: {
-          default: resolve(__dirname, 'pages/dashboard.vue'), // or routes[index].component
-        },
-      })
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:4000/graphql',
+      }
     }
+  },
+
+  router: {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
