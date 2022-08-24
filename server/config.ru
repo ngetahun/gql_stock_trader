@@ -1,7 +1,6 @@
 require './app'
 require 'zeitwerk'
 require 'listen'
-require './config/environment'
 
 loader = Zeitwerk::Loader.new
 # loader.logger = method(:puts)
